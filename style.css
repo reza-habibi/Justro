@@ -1,0 +1,977 @@
+@font-face {
+  font-family: "shabnam";
+  src: url("assetes/fonts/Shabnam.woff2") format("woff2"),
+    url("assetes/fonts/Shabnam.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "shabnam";
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  color: #212529;
+  font-size: 62.5%;
+}
+
+/* desktop menu */
+
+.container-fluid {
+  overflow-x: hidden;
+}
+
+.logo-bg {
+  width: 25rem;
+  height: 13rem;
+}
+
+.logo {
+  position: absolute;
+  top: 3.2rem;
+  right: 51%;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.menu,
+.download-box {
+  height: 13.5rem;
+}
+
+.menu ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  margin-left: 1rem;
+}
+
+li a:hover {
+  background: #000;
+  color: white;
+}
+
+li a {
+  font-size: 1.5rem;
+  color: #333333;
+  transition: all 0.3s;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #333333;
+}
+
+.btn-download {
+  width: 17rem;
+  height: 3.5rem;
+  border-radius: 2.5rem;
+  box-shadow: 0 0.7rem 2rem 0 rgb(227 84 39 / 30%);
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.5rem;
+  background-image: linear-gradient(to top, #e35325, #ff8a65);
+}
+
+.header-wave img {
+  width: 22rem;
+}
+
+/* mobile menu */
+
+.mobile-menu {
+  background: #e0e0e0;
+  color: #01a37a;
+}
+
+.mobile-menu button span {
+  color: #01a37a;
+  font-size: 2rem;
+}
+
+.nav-item {
+  font-size: 2rem;
+}
+
+.navbar-toggler {
+  width: 47px;
+  height: 34px;
+}
+
+.navbar-toggler .line {
+  width: 100%;
+  float: left;
+  height: 3px;
+  background-color: #01a37a;
+  margin-bottom: 8px;
+}
+
+.justro {
+  font-size: 2rem;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-nav ul li {
+  margin-bottom: 1rem;
+}
+
+.fa-search {
+  font-size: 3rem;
+}
+
+.mobile-logo {
+  position: relative;
+}
+
+.mobile-logo > img {
+  position: relative;
+  left: 12rem;
+}
+
+.mobile-logo > span {
+  position: absolute;
+  top: 10rem;
+  right: 30%;
+}
+
+.mobile-logo span > img {
+  width: 7.2rem;
+  height: 7.2rem;
+}
+
+.mobile-logo span > span {
+  position: absolute;
+  top: 2rem;
+  right: 7.5rem;
+  font-size: 2.1rem;
+  color: #007f62;
+}
+
+/*  travel better section */
+
+.better-text h2 {
+  font-size: 4rem;
+  color: #007f62;
+}
+
+.better-text h2 span {
+  border-bottom: 0.2rem solid #007f62;
+}
+
+.better-text p {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+.better-img img {
+  width: 50rem;
+  height: 35rem;
+}
+
+/* wave section */
+
+.wave-section {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20rem;
+  background: url("./assetes/img/bg-wave.png");
+  background-size: 150rem 20rem;
+}
+
+.waveOne {
+  animation: wave1 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+.waveTwo {
+  animation: wave2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 1rem;
+}
+
+@keyframes wave1 {
+  from {
+    background-position-x: 0%;
+  }
+
+  to {
+    background-position-x: 600%;
+  }
+}
+
+@keyframes wave2 {
+  from {
+    background-position-x: 0%;
+  }
+
+  to {
+    background-position-x: -300%;
+  }
+}
+
+/* reserve hotel */
+
+.icons img {
+  border-radius: 50%;
+  padding: 1rem;
+  border: 0.1rem solid #00a27b;
+}
+
+.desktop::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.2rem;
+  height: 100%;
+  background-color: #00f5bb;
+}
+
+.icons li {
+  margin: 0 1rem;
+}
+
+.search-text h2 {
+  color: #007f62;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.search-text p {
+  text-align: justify;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+/* download section */
+
+/* desktop download section */
+
+.download {
+  box-shadow: 0.25rem 0.43rem 2.5rem 0 #e5e5e5;
+  margin-top: 10rem;
+  border-radius: 1rem;
+}
+
+.download h2 {
+  font-size: 2.4rem;
+  color: #007f62;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.download-description {
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.download-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.download-box img {
+  width: 10.1rem;
+}
+
+.download-box-input {
+  position: relative;
+}
+
+.download-box-input input {
+  width: 35rem;
+  height: 4rem;
+  border-radius: 2.5rem;
+  border: 0.1rem solid #eeeeee;
+  background-color: #fafafa;
+  outline: 0;
+  font-size: 1.5rem;
+  padding-left: 15rem;
+}
+
+.download-box-input button {
+  width: 14rem;
+  height: 4rem;
+  position: absolute;
+  left: 0;
+}
+
+.header-btn-dl {
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: 2.5rem;
+  box-shadow: 0 0.7rem 2rem 0 rgb(227 84 39 / 30%);
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.5rem;
+  background-image: linear-gradient(to top, #e35325, #ff8a65);
+}
+
+.download-app ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.download-app ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14rem;
+  height: 4rem;
+  border-radius: 2.5rem;
+  box-shadow: 0 0.6rem 1.5rem 0 rgb(0 127 98 / 25%);
+  background-image: linear-gradient(to top, #00a680, #00f4bd);
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.download-app-bazar img {
+  width: 2rem;
+  margin-left: 0.8rem;
+}
+
+.download-app ul li span {
+  margin-left: 0.8rem;
+}
+
+/* mobile download section */
+
+.download-mob-box {
+  text-align: center;
+  margin: 3rem 0 4rem 0;
+}
+
+.download-mob-box img {
+  width: 12rem;
+}
+
+.download-mob h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #007f62;
+}
+
+.download-mob-description p {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.download-mob-input input {
+  width: 25rem;
+  height: 4rem;
+  border-radius: 2.5rem;
+  font-size: 1.5rem;
+  padding-left: 1.5rem;
+  border: 0.1rem solid #eeeeee;
+  background-color: #fafafa;
+  outline: 0;
+  box-shadow: 0.25rem 0.43rem 1.5rem 0 #ccc;
+}
+
+.download-mob-input button {
+  width: 14rem;
+  height: 4rem;
+  font-size: 1.8rem;
+}
+
+.download-mob-app {
+  text-align: center;
+}
+
+.download-mob-app ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.download-mob-app ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14rem;
+  height: 4rem;
+  border-radius: 2.5rem;
+  box-shadow: 0 0.6rem 1.5rem 0 rgb(0 127 98 / 25%);
+  background-image: linear-gradient(to top, #00a680, #00f4bd);
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.download-mob-app ul li span {
+  margin-left: 0.6rem;
+}
+
+/* trave section */
+
+/* desktop travel section */
+
+.travel {
+  margin-top: 7rem;
+}
+
+.travel-bg {
+  width: 100%;
+  height: 100%;
+  background-image: url(./assetes/img/023_amadegisafar.jpg);
+}
+
+.travel-head h2 {
+  font-size: 3rem;
+  color: #007f62;
+  padding: 2rem 0;
+}
+
+.travel-head h2 {
+  font-size: 3rem;
+  color: #007f62;
+  padding: 2rem 0;
+}
+
+.travel-desc {
+  font-size: 1.5rem;
+  text-align: justify;
+  padding: 0 4rem;
+}
+
+.travel-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.travel-btn button {
+  width: 14rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.travel-btn button span {
+  font-size: 1.8rem;
+}
+
+/* mobile travel section */
+
+.travel-mob-bg {
+  background-image: url(./assetes/img/022_bg_amadegisafar.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 7rem;
+}
+
+.travel-mob-head h2 {
+  font-size: 3rem;
+  color: #007f62;
+  padding-top: 6rem;
+  color: #ffffff;
+}
+
+.travel-mob-desc {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 4rem 15rem;
+  color: #ffffff;
+}
+
+.travel-mob-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.travel-mob-btn button {
+  width: 15rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  font-family: shabnam;
+  font-weight: 300;
+  transform: translateY(1.5rem);
+}
+
+.travel-mob-btn button span {
+  font-size: 1.8rem;
+}
+
+/* trip idea section */
+
+.trip-idea {
+  margin-top: 3rem;
+}
+
+.trip-idea-head {
+  margin: auto;
+  text-align: center;
+}
+
+.trip-idea-head h3 {
+  font-size: 2.4rem;
+  color: #007f62;
+}
+
+.trip-idea-desc p {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+.trip-idea-desc {
+  margin: auto;
+  text-align: justify;
+}
+
+.trip-idea-slides {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.trip-idea-slides img {
+  width: 40%;
+  height: 25vw;
+  border-radius: 1rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+/* receive mail section */
+
+/* desktop receive mail */
+
+.receive-mail {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.receive-mail-desc p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.receive-mail-input {
+  width: 50rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.receive-mail-input input {
+  padding: 0 1rem 0 0;
+}
+
+  /* mobile receive mail */
+
+
+.mob-receive-mail {
+  text-align: center;
+  background-color: #e1fff8;
+}
+
+.mob-receive-mail-desc p {
+  font-size: 1.6rem;
+}
+
+.mob-receive-mail-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mob-receive-mail-input input {
+  width: 33rem;
+  height: 4rem;
+  border-radius: 2.5rem;
+  box-shadow: 0 0.4rem 2rem 0 rgb(0 88 67 / 17%);
+  font-size: 1.5rem;
+  padding: 0 1rem 0 0;
+  outline: 0;
+  border: none;
+}
+
+.mob-receive-mail-input button {
+  width: 14rem;
+  height: 4rem;
+  border-radius: 2.5rem;
+  box-shadow: 0 0.7rem 2rem 0 rgb(227 84 39 / 30%);
+  background-image: linear-gradient(to top, #e35325, #ff8a65);
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+/* footer */
+
+  /* mobile footer */
+
+footer .footer {
+  background-color: #005843;
+  background-image: url(./assetes/img/025_footer_Bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+footer .footer-social {
+  position: absolute;
+  top: 20%;
+  left: 7%;
+  display: flex;
+}
+
+footer .footer-social i:first-child {
+  background-color: #29b6f6;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+footer .footer-social i {
+  margin: 0 1rem;
+  font-size: 2rem;
+}
+
+footer .footer-social i:nth-child(2) {
+  background-color: #ec407a;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+footer .footer-social i:last-child {
+  background-color: #29b6f6;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+footer .footer-links ul li {
+  margin: 1.1rem;
+}
+
+footer .footer-links ul li a {
+  color: #ffffff;
+}
+
+footer .footer-logo {
+  text-align: center;
+  height: 0;
+  padding-bottom: 8.5%;
+  overflow: hidden;
+}
+
+footer .footer-logo img {
+  width: 5.2rem;
+  border-radius: 50%;
+}
+
+footer .footer-logo .fa-phone,
+footer .footer-logo .fa-envelope {
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+footer .footer-logo img {
+  width: 5.2rem;
+  border-radius: 50%;
+}
+
+  /* desktop footer */
+
+footer .footer-desk {
+  height: 15rem;
+  background-image: url(./assetes/img/025_footer_Bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 8rem;
+  position: relative;
+}
+
+footer .footer-desk-stone {
+  width: 35rem;
+  background-image: url(./assetes/img/026_footer_c.right_bg.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+}
+
+footer .footer-desk-stone-inner img {
+  width: 5rem;
+  border-radius: 50%;
+  position: relative;
+  bottom: 1.8rem;
+  right: -45%;
+}
+
+footer .footer-desk-stone-inner p {
+  width: 26rem;
+  font-size: 1.2rem;
+  margin: 0;
+  position: relative;
+  right: 11%;
+}
+
+footer .footer-desk-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .footer-desk-links ul {
+  position: relative;
+  top: 5.5rem;
+}
+
+footer .footer-desk-links ul li {
+  margin: 1rem;
+  list-style-type: circle;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+footer .footer-desk-links ul li a {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+footer .footer-desk-contact {
+  height: 5.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: #ffffff;
+  padding-left: 10rem;
+}
+
+footer .footer-desk-contact-phone {
+  margin-left: 3rem;
+  font-size: 1.2rem;
+}
+
+footer .footer-desk-contact-mail {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+footer .footer-desk-social {
+  width: 10rem;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
+
+.footer-desk-social span {
+  display: flex;
+}
+
+.footer-social span {
+  display: flex;
+}
+
+footer .footer-desk-social .fa-twitter {
+  font-size: 2.2rem;
+  background-color: #eee;
+  border-radius: 50%;
+  padding: 1rem;
+  color: #29b6f6;
+}
+
+footer .footer-desk-social .fa-instagram {
+  font-size: 2.2rem;
+  background-color: #eee;
+  border-radius: 50%;
+  padding: 1rem;
+  color: #ec407a;
+  position: absolute;
+  top: 55%;
+  left: 0;
+}
+
+footer .footer-desk-social .fa-telegram {
+  font-size: 2.2rem;
+  background-color: #eee;
+  border-radius: 50%;
+  padding: 1rem;
+  color: #29b6f6;
+  position: absolute;
+  top: 76%;
+  left: 6.3rem;
+}
+
+/* back to top button */
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* media query */
+
+@media screen and (min-width: 576px) {
+  footer .footer-logo {
+    padding-bottom: 6.3%;
+  }
+
+  footer .footer-logo .fa-phone,
+  footer .footer-logo .fa-envelope {
+    font-size: 1.5rem;
+  }
+
+  footer .footer-logo img {
+    width: 6rem;
+  }
+
+  footer .footer-links ul li a {
+    font-size: 1.2rem;
+  }
+
+  footer .footer-social {
+    top: 25%;
+  }
+
+  footer .footer-social i {
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .trip-idea-head h3 {
+    font-size: 2.8rem;
+  }
+
+  footer .footer-logo {
+    padding-bottom: 5.5%;
+  }
+
+  footer .footer-logo .fa-phone,
+  footer .footer-logo .fa-envelope {
+    font-size: 1.7rem;
+  }
+
+  footer .footer-logo img {
+    width: 6.5rem;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-logo-box {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .trip-idea-head h3 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .trip-idea-slides {
+    overflow-x: hidden;
+  }
+
+  .trip-idea-slides img {
+    width: 19.15%;
+    height: 13vw;
+  }
+
+  .logo-bg {
+    width: 32rem;
+    height: 16rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  footer .footer-desk-social .fa-twitter {
+    position: absolute;
+    top: 2rem;
+    font-size: 2.5rem;
+  }
+  footer .footer-desk-social .fa-instagram {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 5.1rem;
+    left: -0.7rem;
+  }
+
+  footer .footer-desk-social .fa-telegram {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 5.8rem;
+    left: -7rem;
+  }
+}
